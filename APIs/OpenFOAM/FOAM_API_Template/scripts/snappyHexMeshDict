@@ -1,0 +1,675 @@
+FoamFile
+{
+	version	2.0;
+	class	dictionary;
+	format	ascii;
+	location	"system";
+	object	snappyHexMeshDict;
+}
+castellatedMesh	true;
+snap	true;
+addLayers	false;
+geometry
+{
+	PCB.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	PCB;                                
+		max	(0.6 0.4 0.003);
+		min	(0.0 0.0 0.0);
+		faceGroups
+		{
+			x_min
+			{
+				name	PCB;
+			}                                        
+			x_max
+			{
+				name	PCB;
+			}                                        
+			y_min
+			{
+				name	PCB;
+			}                                        
+			y_max
+			{
+				name	PCB;
+			}                                        
+			z_min
+			{
+				name	PCB;
+			}                                        
+			z_max
+			{
+				name	PCB;
+			}                                        
+		}                                        
+	}
+	Air.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	Air;                                
+		max	(0.61 0.41 0.05);
+		min	(-0.01 -0.01 -0.005);
+		faceGroups
+		{
+			x_min
+			{
+				name	Air_inlet;
+			}                                        
+			x_max
+			{
+				name	Air_outlet;
+			}                                        
+			y_min
+			{
+				name	Air;
+			}                                        
+			y_max
+			{
+				name	Air;
+			}                                        
+			z_min
+			{
+				name	Air;
+			}                                        
+			z_max
+			{
+				name	Air;
+			}                                        
+		}                                        
+	}
+	CPU1.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	CPU1;                                
+		max	(0.35 0.17 0.008);
+		min	(0.25 0.1 0.003);
+		faceGroups
+		{
+			x_min
+			{
+				name	CPU1;
+			}                                        
+			x_max
+			{
+				name	CPU1;
+			}                                        
+			y_min
+			{
+				name	CPU1;
+			}                                        
+			y_max
+			{
+				name	CPU1;
+			}                                        
+			z_min
+			{
+				name	CPU1;
+			}                                        
+			z_max
+			{
+				name	CPU1;
+			}                                        
+		}                                        
+	}
+	CPU2.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	CPU2;                                
+		max	(0.35 0.32 0.008);
+		min	(0.25 0.25 0.003);
+		faceGroups
+		{
+			x_min
+			{
+				name	CPU2;
+			}                                        
+			x_max
+			{
+				name	CPU2;
+			}                                        
+			y_min
+			{
+				name	CPU2;
+			}                                        
+			y_max
+			{
+				name	CPU2;
+			}                                        
+			z_min
+			{
+				name	CPU2;
+			}                                        
+			z_max
+			{
+				name	CPU2;
+			}                                        
+		}                                        
+	}
+	GPU1.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	GPU1;                                
+		max	(0.13 0.11 0.008);
+		min	(0.07 0.05 0.003);
+		faceGroups
+		{
+			x_min
+			{
+				name	GPU1;
+			}                                        
+			x_max
+			{
+				name	GPU1;
+			}                                        
+			y_min
+			{
+				name	GPU1;
+			}                                        
+			y_max
+			{
+				name	GPU1;
+			}                                        
+			z_min
+			{
+				name	GPU1;
+			}                                        
+			z_max
+			{
+				name	GPU1;
+			}                                        
+		}                                        
+	}
+	GPU2.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	GPU2;                                
+		max	(0.13 0.31 0.008);
+		min	(0.07 0.25 0.003);
+		faceGroups
+		{
+			x_min
+			{
+				name	GPU2;
+			}                                        
+			x_max
+			{
+				name	GPU2;
+			}                                        
+			y_min
+			{
+				name	GPU2;
+			}                                        
+			y_max
+			{
+				name	GPU2;
+			}                                        
+			z_min
+			{
+				name	GPU2;
+			}                                        
+			z_max
+			{
+				name	GPU2;
+			}                                        
+		}                                        
+	}
+	PSU1.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	PSU1;                                
+		max	(0.58 0.32 0.043);
+		min	(0.4 0.28 0.003);
+		faceGroups
+		{
+			x_min
+			{
+				name	PSU1;
+			}                                        
+			x_max
+			{
+				name	PSU1;
+			}                                        
+			y_min
+			{
+				name	PSU1;
+			}                                        
+			y_max
+			{
+				name	PSU1;
+			}                                        
+			z_min
+			{
+				name	PSU1;
+			}                                        
+			z_max
+			{
+				name	PSU1;
+			}                                        
+		}                                        
+	}
+	PSU2.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	PSU2;                                
+		max	(0.58 0.37 0.043);
+		min	(0.4 0.33 0.003);
+		faceGroups
+		{
+			x_min
+			{
+				name	PSU2;
+			}                                        
+			x_max
+			{
+				name	PSU2;
+			}                                        
+			y_min
+			{
+				name	PSU2;
+			}                                        
+			y_max
+			{
+				name	PSU2;
+			}                                        
+			z_min
+			{
+				name	PSU2;
+			}                                        
+			z_max
+			{
+				name	PSU2;
+			}                                        
+		}                                        
+	}
+	HS1.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	HS1;                                
+		max	(0.36 0.18 0.048);
+		min	(0.24 0.09 0.008);
+		faceGroups
+		{
+			x_min
+			{
+				name	HS1;
+			}                                        
+			x_max
+			{
+				name	HS1;
+			}                                        
+			y_min
+			{
+				name	HS1;
+			}                                        
+			y_max
+			{
+				name	HS1;
+			}                                        
+			z_min
+			{
+				name	HS1;
+			}                                        
+			z_max
+			{
+				name	HS1;
+			}                                        
+		}                                        
+	}
+	HS2.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	HS2;                                
+		max	(0.36 0.33 0.048);
+		min	(0.24 0.24 0.008);
+		faceGroups
+		{
+			x_min
+			{
+				name	HS2;
+			}                                        
+			x_max
+			{
+				name	HS2;
+			}                                        
+			y_min
+			{
+				name	HS2;
+			}                                        
+			y_max
+			{
+				name	HS2;
+			}                                        
+			z_min
+			{
+				name	HS2;
+			}                                        
+			z_max
+			{
+				name	HS2;
+			}                                        
+		}                                        
+	}
+	HS3.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	HS3;                                
+		max	(0.15 0.12 0.048);
+		min	(0.05 0.04 0.008);
+		faceGroups
+		{
+			x_min
+			{
+				name	HS3;
+			}                                        
+			x_max
+			{
+				name	HS3;
+			}                                        
+			y_min
+			{
+				name	HS3;
+			}                                        
+			y_max
+			{
+				name	HS3;
+			}                                        
+			z_min
+			{
+				name	HS3;
+			}                                        
+			z_max
+			{
+				name	HS3;
+			}                                        
+		}                                        
+	}
+	HS4.stl
+	{
+		type	triSurfaceMesh;
+		primitiveType	box;
+		name	HS4;                                
+		max	(0.15 0.32 0.048);
+		min	(0.05 0.24 0.008);
+		faceGroups
+		{
+			x_min
+			{
+				name	HS4;
+			}                                        
+			x_max
+			{
+				name	HS4;
+			}                                        
+			y_min
+			{
+				name	HS4;
+			}                                        
+			y_max
+			{
+				name	HS4;
+			}                                        
+			z_min
+			{
+				name	HS4;
+			}                                        
+			z_max
+			{
+				name	HS4;
+			}                                        
+		}                                        
+	}
+}
+castellatedMeshControls
+{
+	locationsInMesh (
+		((0.01 0.01 0.002) pcb)
+		((0.01 0.01 0.04) air)
+		((0.26 0.11 0.007) cpu1)
+		((0.26 0.26 0.007) cpu2)
+		((0.08 0.06 0.007) gpu1)
+		((0.08 0.26 0.007) gpu2)
+		((0.42 0.283 0.032999999999999995) psu1)
+		((0.42 0.333 0.032999999999999995) psu2)
+		((0.25 0.11 0.013000000000000001) hs1)
+		((0.25 0.26 0.013000000000000001) hs2)
+		((0.06 0.06 0.013000000000000001) hs3)
+		((0.06 0.26 0.013000000000000001) hs4)
+);
+	refinementSurfaces
+	{
+		PCB
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		Air
+		{
+			level (1 1);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		CPU1
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		CPU2
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		GPU1
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		GPU2
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		PSU1
+		{
+			level (1 1);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		PSU2
+		{
+			level (1 1);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		HS1
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		HS2
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		HS3
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+		HS4
+		{
+			level (1 2);
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+	}
+	refinementRegions
+	{
+	}
+	limitRegions
+	{
+	}
+	features
+	(
+	{
+		file "PCB.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "Air.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "CPU1.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "CPU2.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "GPU1.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "GPU2.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "PSU1.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "PSU2.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "HS1.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "HS2.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "HS3.eMesh";
+		levels ((0 0));
+	}
+	{
+		file "HS4.eMesh";
+		levels ((0 0));
+	}
+	);
+	maxLocalCells	1000000;
+	maxGlobalCells	10000000;
+	nCellsBetweenLevels	4;
+	maxLoadUnbalance	0.1;                    
+	minRefinementCells	10;
+	resolveFeatureAngle	30.0;
+	allowFreeStandingZoneFaces	true;
+}
+snapControls
+{
+	tolerance	1.0;
+	nSmoothPatch	3;
+	nSolveIter	50;
+	nRelaxIter	5;
+	nFeatureSnapIter	10;                
+	implicitFeatureSnap	true;
+	explicitFeatureSnap	true;
+	multiRegionFeatureSnap	true;
+	nFaceSplitInterval	5;
+}
+addLayersControls
+{
+	layers
+	{
+	}
+	relativeSizes	true;
+	minThickness	0.1;
+	firstLayerThickness	0.2;                
+	expansionRatio	1.25;
+	nGrow	0;
+	featureAngle	180.0;
+	maxFaceThicknessRatio	0.5;
+	nSmoothSurfaceNormals	5;                
+	nSmoothThickness	10;
+	minMedialAxisAngle	90.0;
+	maxThicknessToMedialRatio	0.5;
+	nMedialAxisIter	100;                
+	nSmoothNormals	3;
+	slipFeatureAngle	30.0;
+	nRelaxIter	5;
+	nBufferCellsNoExtrude	0;
+	nLayerIter	50;                
+	nRelaxedIter	20;
+	detectExtrusionIsland	true;
+}
+meshQualityControls
+{
+	maxNonOrtho	65.0;
+	maxBoundarySkewness	20.0;
+	maxInternalSkewness	4.0;                
+	maxConcave	80.0;
+	minVol	1.0E-14;
+	minTetQuality	1.0E-20;
+	minArea	-1.0;
+	minTwist	0.02;
+	minTriangleTwist	-1.0;                
+	minDeterminant	0.01;
+	minFaceWeight	0.05;
+	minVolRatio	0.01;
+	minVolCollapseRatio	0.1;
+	nSmoothScale	4;                
+	errorReduction	0.75;
+	relaxed
+	{
+		maxNonOrtho	75.0;
+	}
+}
+mergeTolerance	1.0E-6;
+debug	0;

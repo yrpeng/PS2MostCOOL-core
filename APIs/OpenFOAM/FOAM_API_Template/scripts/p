@@ -1,0 +1,109 @@
+
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0/air";
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [ 1 -1 -2 0 0 0 0 ];
+
+internalField   uniform 100000;
+
+boundaryField
+{
+    air_to_pcb
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_Air
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_cpu1
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_cpu2
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_gpu1
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_gpu2
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_psu1
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_psu2
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_hs1
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_HS1
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_hs2
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_HS2
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_hs3
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_HS3
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_to_hs4
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_HS4
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_Air_inlet
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+    air_Air_outlet
+    {
+        type            calculated;
+        value           uniform 100000;
+    }
+}

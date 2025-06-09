@@ -1,0 +1,46 @@
+
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0/pcb";
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions	[1 -1 -2 0 0 0 0];
+internalField	uniform 0.0;
+boundaryField
+{
+    pcb_to_air
+    {
+		type	zeroGradient;
+	}
+    pcb_to_cpu1
+    {
+		type	zeroGradient;
+	}
+    pcb_to_cpu2
+    {
+		type	zeroGradient;
+	}
+    pcb_to_gpu1
+    {
+		type	zeroGradient;
+	}
+    pcb_to_gpu2
+    {
+		type	zeroGradient;
+	}
+    pcb_to_psu1
+    {
+		type	zeroGradient;
+	}
+    pcb_to_psu2
+    {
+		type	zeroGradient;
+	}
+    
+}

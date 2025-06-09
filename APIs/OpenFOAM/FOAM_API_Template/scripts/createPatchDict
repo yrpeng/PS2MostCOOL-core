@@ -1,0 +1,150 @@
+FoamFile
+{
+    version	2.0;
+	format	ascii;
+	class	dictionary;
+	location	"system";
+	object	createPatchDict;
+}
+pointSync	false;
+patches	(
+	{
+		name	Air;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+		patches	(Air_y_min Air_y_max Air_z_min Air_z_max);
+	}
+
+	{
+		name	Air_inlet;
+		patchInfo
+		{
+			type	patch;
+		}
+		constructFrom	patches;
+		patches	(Air_x_min);
+	}
+
+	{
+		name	Air_outlet;
+		patchInfo
+		{
+			type	patch;
+		}
+		constructFrom	patches;
+		patches	(Air_x_max);
+	}
+
+	{
+		name	PCB;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(PCB_x_min PCB_x_max PCB_y_min PCB_y_max PCB_z_min PCB_z_max);
+	}
+
+	{
+		name	CPU1;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(CPU1_x_min CPU1_x_max CPU1_y_min CPU1_y_max CPU1_z_min CPU1_z_max);
+	}
+
+	{
+		name	CPU2;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(CPU2_x_min CPU2_x_max CPU2_y_min CPU2_y_max CPU2_z_min CPU2_z_max);
+	}
+
+	{
+		name	GPU1;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(GPU1_x_min GPU1_x_max GPU1_y_min GPU1_y_max GPU1_z_min GPU1_z_max);
+	}
+
+	{
+		name	GPU2;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(GPU2_x_min GPU2_x_max GPU2_y_min GPU2_y_max GPU2_z_min GPU2_z_max);
+	}
+
+	{
+		name	PSU1;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(PSU1_x_min PSU1_x_max PSU1_y_min PSU1_y_max PSU1_z_min PSU1_z_max);
+	}
+
+	{
+		name	PSU2;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(PSU2_x_min PSU2_x_max PSU2_y_min PSU2_y_max PSU2_z_min PSU2_z_max);
+	}
+
+	{
+		name	HS1;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(HS1__default);
+	}
+
+	{
+		name	HS2;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(HS2__default);
+	}
+
+	{
+		name	HS3;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(HS3__default);
+	}
+
+	{
+		name	HS4;
+		patchInfo
+		{
+			type	wall;
+		}
+		constructFrom	patches;
+        patches	(HS4__default);
+	}
+);

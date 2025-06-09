@@ -1,0 +1,80 @@
+FoamFile
+{
+    version	2.0;
+	format	ascii;
+	class	dictionary;
+	location	"system";
+	object	surfaceFeatureExtractDict;
+}
+PCB.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+Air.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+CPU1.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+CPU2.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+GPU1.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+GPU2.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+PSU1.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+PSU2.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+HS1.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+HS2.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+HS3.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}
+HS4.stl
+{
+    extractionMethod	extractFromSurface;
+    includedAngle	120.0;
+    geometricTestOnly	false;
+}

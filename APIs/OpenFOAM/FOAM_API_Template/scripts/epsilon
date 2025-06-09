@@ -1,0 +1,109 @@
+
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0/air";
+    object      epsilon;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [ 0 2 -3 0 0 0 0 ];
+
+internalField   uniform 1;
+
+boundaryField
+{
+    air_to_pcb
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_Air
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_cpu1
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_cpu2
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_gpu1
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_gpu2
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_psu1
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_psu2
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_hs1
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_HS1
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_hs2
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_HS2
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_hs3
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_HS3
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_to_hs4
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_HS4
+    {
+        type            epsilonWallFunction;
+        value           uniform 1;
+    }
+    air_Air_inlet
+    {
+        type            turbulentMixingLengthDissipationRateInlet;
+        value           uniform 1;
+        mixingLength    0.001;
+    }
+    air_Air_outlet
+    {
+        type            zeroGradient;
+    }
+}
