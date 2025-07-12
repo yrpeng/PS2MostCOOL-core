@@ -1,0 +1,143 @@
+FoamFile
+{
+    class dictionary;
+    format ascii;
+    location	system;
+    object controlDict;
+    version 2.0;
+}
+#include "./inputs"
+application	chtMultiRegionSimpleFoam;
+deltaT	1;
+endTime	$endTime;
+purgeWrite	2;
+startFrom	latestTime;
+startTime	0;
+stopAt	endTime;
+timeFormat	general;
+timePrecision	6;
+writeControl	timeStep;
+writeInterval	10;
+writePrecision	7;
+runTimeModifiable	true;
+compression	uncompressed;
+writeFormat	binary;
+libs	("libfvMotionSolvers.dll" "libturbulenceModels.dll" "libturbulenceModelSchemes.dll" "libfvOptions.dll");
+functions
+{
+	writeExtraFieldsInAir
+	{
+		libs	("libutilityFunctionObjects.dll");
+		objects	(rho);
+		type	writeObjects;
+		writeOption	anyWrite;
+		enabled	true;
+		log	true;
+		writeControl	writeTime;
+		region	air;
+	}
+	surface-CPU1
+	{
+        type surfaceFieldValue;
+        libs
+        (
+            "fieldFunctionObjects"
+        );
+        regionType patch;
+        name cpu1_to_hs1;
+        surfaceFormat none;
+        fields
+        (
+            T
+        );
+        operation areaAverage;
+        writeFields false;
+        executeControl timeStep;
+        executeInterval 1;
+        writeControl timeStep;
+        writeInterval 1;
+        updateHeader false;
+        log false;
+        region cpu1;
+	}
+	surface-CPU2
+	{
+        type surfaceFieldValue;
+        libs
+        (
+            "fieldFunctionObjects"
+        );
+        regionType patch;
+        name cpu2_to_hs2;
+        surfaceFormat none;
+        fields
+        (
+            T
+        );
+        operation areaAverage;
+        writeFields false;
+        executeControl timeStep;
+        executeInterval 1;
+        writeControl timeStep;
+        writeInterval 1;
+        updateHeader false;
+        log false;
+        region cpu2;
+	}
+	surface-GPU1
+	{
+        type surfaceFieldValue;
+        libs
+        (
+            "fieldFunctionObjects"
+        );
+        regionType patch;
+        name gpu1_to_hs3;
+        surfaceFormat none;
+        fields
+        (
+            T
+        );
+        operation areaAverage;
+        writeFields false;
+        executeControl timeStep;
+        executeInterval 1;
+        writeControl timeStep;
+        writeInterval 1;
+        updateHeader false;
+        log false;
+        region gpu1;
+	}
+	surface-GPU2
+	{
+        type surfaceFieldValue;
+        libs
+        (
+            "fieldFunctionObjects"
+        );
+        regionType patch;
+        name gpu2_to_hs4;
+        surfaceFormat none;
+        fields
+        (
+            T
+        );
+        operation areaAverage;
+        writeFields false;
+        executeControl timeStep;
+        executeInterval 1;
+        writeControl timeStep;
+        writeInterval 1;
+        updateHeader false;
+        log false;
+        region gpu2;
+	}
+}
+OptimisationSwitches
+{
+	fileHandler	uncollated;
+	fileModificationSkew	0;
+	maxMasterFileBufferSize	1.0E9;
+	maxThreadFileBufferSize	1.0E9;
+	mpiBufferSize	200000000;
+}

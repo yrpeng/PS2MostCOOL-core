@@ -1,0 +1,12 @@
+FoamFile
+{
+	version	2.0;
+	format	ascii;
+	class	dictionary;
+	location	"constant";
+	object	regionProperties;
+}
+regions	(
+	fluid	(air)
+	solid	(pcb cpu1 cpu2 gpu1 gpu2 psu1 psu2 hs1 hs2 hs3 hs4)
+);

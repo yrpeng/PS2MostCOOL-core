@@ -1,0 +1,422 @@
+solid 
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w5  h
+     vertex  X  w6  h
+     vertex  X  W  Z
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00 -0.000000e+00
+   outer loop
+     vertex  X  W  H
+     vertex  X  W  Z
+     vertex  X  w6  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w4  h
+     vertex  X  w5  h
+     vertex  X  W  Z
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w6  H
+     vertex  X  W  H
+     vertex  X  w6  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w4  H
+     vertex  X  w5  H
+     vertex  X  w5  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w4  H
+     vertex  X  w5  h
+     vertex  X  w4  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  Y  Z
+     vertex  X  w3  h
+     vertex  X  w4  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  Y  Z
+     vertex  X  w4  h
+     vertex  X  W  Z
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  Y  Z
+     vertex  X  w2  h
+     vertex  X  w3  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00 -0.000000e+00
+   outer loop
+     vertex  X  w1  h
+     vertex  X  w2  h
+     vertex  X  Y  Z
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w2  H
+     vertex  X  w3  H
+     vertex  X  w3  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  w2  H
+     vertex  X  w3  h
+     vertex  X  w2  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  Y  H
+     vertex  X  w1  H
+     vertex  X  w1  h
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  X  Y  H
+     vertex  X  w1  h
+     vertex  X  Y  Z
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w1  H
+     vertex  X  w1  H
+     vertex  X  Y  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w1  H
+     vertex  X  Y  H
+     vertex  L  Y  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w1  H
+     vertex  L  w1  h
+     vertex  X  w1  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w1  H
+     vertex  X  w1  h
+     vertex  X  w1  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w2  h
+     vertex  X  w2  h
+     vertex  X  w1  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w2  h
+     vertex  X  w1  h
+     vertex  L  w1  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
+   outer loop
+     vertex  L  w2  H
+     vertex  X  w2  h
+     vertex  L  w2  h
+   endloop
+ endfacet
+ facet normal -0.000000e+00 -1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w2  H
+     vertex  X  w2  H
+     vertex  X  w2  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w3  H
+     vertex  X  w3  H
+     vertex  X  w2  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w3  H
+     vertex  X  w2  H
+     vertex  L  w2  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w3  H
+     vertex  L  w3  h
+     vertex  X  w3  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w3  H
+     vertex  X  w3  h
+     vertex  X  w3  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w4  h
+     vertex  X  w4  h
+     vertex  X  w3  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w4  h
+     vertex  X  w3  h
+     vertex  L  w3  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
+   outer loop
+     vertex  L  w4  H
+     vertex  X  w4  h
+     vertex  L  w4  h
+   endloop
+ endfacet
+ facet normal -0.000000e+00 -1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w4  H
+     vertex  X  w4  H
+     vertex  X  w4  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w5  H
+     vertex  X  w5  H
+     vertex  X  w4  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w5  H
+     vertex  X  w4  H
+     vertex  L  w4  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w5  H
+     vertex  L  w5  h
+     vertex  X  w5  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w5  H
+     vertex  X  w5  h
+     vertex  X  w5  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w6  h
+     vertex  X  w6  h
+     vertex  X  w5  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  w6  h
+     vertex  X  w5  h
+     vertex  L  w5  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
+   outer loop
+     vertex  L  w6  H
+     vertex  X  w6  h
+     vertex  L  w6  h
+   endloop
+ endfacet
+ facet normal -0.000000e+00 -1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w6  H
+     vertex  X  w6  H
+     vertex  X  w6  h
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  W  H
+     vertex  X  W  H
+     vertex  X  w6  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  L  W  H
+     vertex  X  w6  H
+     vertex  L  w6  H
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  W  H
+     vertex  L  W  Z
+     vertex  X  W  Z
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  W  H
+     vertex  X  W  Z
+     vertex  X  W  H
+   endloop
+ endfacet
+ facet normal -0.000000e+00  0.000000e+00 -1.000000e+00
+   outer loop
+     vertex  L  W  Z
+     vertex  X  Y  Z
+     vertex  X  W  Z
+   endloop
+ endfacet
+ facet normal  0.000000e+00 -0.000000e+00 -1.000000e+00
+   outer loop
+     vertex  L  W  Z
+     vertex  L  Y  Z
+     vertex  X  Y  Z
+   endloop
+ endfacet
+ facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
+   outer loop
+     vertex  L  Y  H
+     vertex  X  Y  Z
+     vertex  L  Y  Z
+   endloop
+ endfacet
+ facet normal -0.000000e+00 -1.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  Y  H
+     vertex  X  Y  H
+     vertex  X  Y  Z
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w5  h
+     vertex  L  W  Z
+     vertex  L  w6  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  W  H
+     vertex  L  w6  h
+     vertex  L  W  Z
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w4  h
+     vertex  L  W  Z
+     vertex  L  w5  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w6  H
+     vertex  L  w6  h
+     vertex  L  W  H
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w4  H
+     vertex  L  w5  h
+     vertex  L  w5  H
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w4  H
+     vertex  L  w4  h
+     vertex  L  w5  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  Y  Z
+     vertex  L  w4  h
+     vertex  L  w3  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  Y  Z
+     vertex  L  W  Z
+     vertex  L  w4  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  Y  Z
+     vertex  L  w3  h
+     vertex  L  w2  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w1  h
+     vertex  L  Y  Z
+     vertex  L  w2  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w2  H
+     vertex  L  w3  h
+     vertex  L  w3  H
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  w2  H
+     vertex  L  w2  h
+     vertex  L  w3  h
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  Y  H
+     vertex  L  w1  h
+     vertex  L  w1  H
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  L  Y  H
+     vertex  L  Y  Z
+     vertex  L  w1  h
+   endloop
+ endfacet
+endsolid

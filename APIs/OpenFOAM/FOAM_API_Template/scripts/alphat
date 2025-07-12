@@ -1,0 +1,125 @@
+
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0/air";
+    object      alphat;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [ 1 -1 -1 0 0 0 0 ];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    air_to_pcb
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_Air
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_cpu1
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_cpu2
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_gpu1
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_gpu2
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_psu1
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_psu2
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_hs1
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_HS1
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_hs2
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_HS2
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_hs3
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_HS3
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_to_hs4
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_HS4
+    {
+        type            compressible::alphatJayatillekeWallFunction;
+        value           uniform 0;
+        Prt             0.85;
+    }
+    air_Air_inlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    air_Air_outlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}

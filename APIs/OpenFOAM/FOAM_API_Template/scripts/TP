@@ -1,0 +1,94 @@
+
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0/pcb";
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+#include "./inputs"
+dimensions	[0 0 0 1 0 0 0];
+internalField	uniform $tInlet;
+boundaryField
+{
+    pcb_to_air
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+	}
+    pcb_to_cpu1
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+    pcb_to_cpu2
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+    pcb_to_gpu1
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+    pcb_to_gpu2
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+    pcb_to_psu1
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+    pcb_to_psu2
+    {
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+    
+}

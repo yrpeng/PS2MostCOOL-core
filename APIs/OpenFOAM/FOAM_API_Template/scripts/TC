@@ -1,0 +1,46 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	volScalarField;
+	location	"0/name";
+	object	T;
+	arch	"LSB;label=32;scalar=64";
+}
+#include "./inputs"
+dimensions	[0 0 0 1 0 0 0];
+internalField	uniform $tInlet;
+boundaryField
+{
+	name_to_pcb
+	{
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	();
+		kappaLayers	();
+	}
+	name_to_air
+	{
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+	}
+	name_to_face
+	{
+		type	compressible::turbulentTemperatureCoupledBaffleMixed;
+		value	uniform $tInlet;
+		kappaMethod	solidThermo;
+		kappa	none;
+		neighbourFieldName	T;
+		Tnbr	T;
+		thicknessLayers	($timThikness);
+		kappaLayers	($timKappa);
+	}
+}

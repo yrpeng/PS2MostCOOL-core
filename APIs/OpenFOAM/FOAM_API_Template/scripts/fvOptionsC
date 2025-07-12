@@ -1,0 +1,23 @@
+FoamFile
+{
+	version	2.0;
+	format	ascii;
+	class	dictionary;
+	location	"system/name";
+	object	fvOptions;
+}
+#include "./inputs"
+scalarSource
+{
+	active	true;
+	type	scalarSemiImplicitSource;
+	scalarSemiImplicitSourceCoeffs
+	{
+		volumeMode	absolute;
+		selectionMode	all;
+		injectionRateSuSp
+		{
+			h	($pname 0.0);
+		}
+	}
+}

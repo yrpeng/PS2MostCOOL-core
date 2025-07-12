@@ -1,0 +1,88 @@
+FoamFile
+{
+	version	2.0;
+	class	dictionary;
+	format	ascii;
+	location	"constant/air";
+	object	viewFactorsDict;
+}
+writeViewFactorMatrix	true;
+writeFacesAgglomeration	true;
+writePatchViewFactors	false;
+maxDynListLength	1000000;
+facesPerCluster	5;
+air_Air
+{
+	nFacesInCoarsestLevel	1438;
+	featureAngle	20.0;
+}
+air_Air_inlet
+{
+	nFacesInCoarsestLevel	120;
+	featureAngle	20.0;
+}
+air_Air_outlet
+{
+	nFacesInCoarsestLevel	120;
+	featureAngle	20.0;
+}
+air_HS1
+{
+	nFacesInCoarsestLevel	461;
+	featureAngle	20.0;
+}
+air_HS2
+{
+	nFacesInCoarsestLevel	217;
+	featureAngle	20.0;
+}
+air_HS4
+{
+	nFacesInCoarsestLevel	96;
+	featureAngle	20.0;
+}
+air_to_cpu1
+{
+	nFacesInCoarsestLevel	20;
+	featureAngle	20.0;
+}
+air_to_cpu2
+{
+	nFacesInCoarsestLevel	20;
+	featureAngle	20.0;
+}
+air_to_gpu1
+{
+	nFacesInCoarsestLevel	16;
+	featureAngle	20.0;
+}
+air_to_gpu2
+{
+	nFacesInCoarsestLevel	16;
+	featureAngle	20.0;
+}
+air_to_hs1
+{
+	nFacesInCoarsestLevel	899;
+	featureAngle	20.0;
+}
+air_to_hs2
+{
+	nFacesInCoarsestLevel	765;
+	featureAngle	20.0;
+}
+air_to_hs3
+{
+	nFacesInCoarsestLevel	4522;
+	featureAngle	20.0;
+}
+air_to_hs4
+{
+	nFacesInCoarsestLevel	787;
+	featureAngle	20.0;
+}
+air_to_pcb
+{
+	nFacesInCoarsestLevel	1557;
+	featureAngle	20.0;
+}
